@@ -1,0 +1,44 @@
+$colorGrey: #5e5e5d;
+$colorGrey2: #555554;
+$colorGrey3: #E5E9ED;
+
+$colorBrown: #393938;
+
+$colorBlue: #009ee3;
+$colorBlue2: #09a1e4;
+$colorBlue3: #019de2;
+$colorBlue4: #029de2;
+$colorBlue5: #DBF3FE;
+$colorBlue6: #019ee2;
+
+$colorBlueViolet: #75579f;
+
+
+@mixin clearfix {
+    &::after {
+        content: '';
+        clear: both;
+        display: table !important;
+        height: 0 !important;
+        visibility: hidden;
+    }
+}
+
+@mixin mq($from, $to: false) {
+    @if $to {
+        @media (min-width: #{$from}px) and (max-width: #{$to}px) {
+            @content;
+        }
+    }
+
+    @else {
+        @media (max-width: #{$from}px) {
+            @content;
+        }
+    }
+}
+
+%dib {
+    display: inline-block;
+    vertical-align: top;
+}

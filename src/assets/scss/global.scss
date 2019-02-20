@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Calibri", sans-serif;
+    font-display: auto;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #2f1b15;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1584px;
+    margin: 0 auto;
+}
+
